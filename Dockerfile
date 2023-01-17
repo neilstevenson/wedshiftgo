@@ -8,6 +8,8 @@ COPY go.mod /build/
 COPY go.sum /build/
 COPY cli/   /build/cli/
 
+RUN chmod u+w /build/*
+
 RUN go mod tidy
 RUN go mod download
 RUN go build ./cli/client
