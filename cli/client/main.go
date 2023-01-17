@@ -43,7 +43,7 @@ func main() {
 	fmt.Printf("Map '%s' has size %d\n", map_name, size)
 	fmt.Printf("======================================\n")
 
-	time.Sleep(30 * time.Minute)
+	time.Sleep(300 * time.Minute)
 	fmt.Printf("Disconnecting\n")
 	hazelcastClient.Shutdown(ctx)
 }
