@@ -1,6 +1,6 @@
-module github.com/neilstevenson/wedshiftgo
+module cli
 
-go 1.19
+go 1.18
 
 require github.com/hazelcast/hazelcast-go-client v1.3.1
 
