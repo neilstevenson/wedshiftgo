@@ -25,6 +25,7 @@ func getClient(ctx context.Context) *hazelcast.Client {
 	config.Cluster.Network.SetAddresses(host_ip)
         config.Cluster.Unisocket = true
 	config.Logger.Level = loggingLevel
+        config.Stats.Enabled = true
 	client, err := hazelcast.StartNewClientWithConfig(ctx, config)
 	if err != nil {
 		log.Fatal(err)
